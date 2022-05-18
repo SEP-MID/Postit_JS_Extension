@@ -157,6 +157,17 @@ button:hover, a:hover {
   background-color: #7fc844;
 }
 
+
+.pjs-postit-process {
+  margin: 8px;
+  width: 0; 
+  height: 0; 
+  border-top: 32px solid transparent;
+  border-bottom: 32px solid transparent;
+  
+  border-left: 32px solid green;
+}
+
 .pjs-postit-circle {
   margin: 8px;
   border-radius: 90px;
