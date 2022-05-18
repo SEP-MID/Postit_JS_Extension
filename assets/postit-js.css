@@ -162,10 +162,10 @@ button:hover, a:hover {
   margin: 8px;
   width: 0; 
   height: 0; 
-  border-top: 32px solid transparent;
-  border-bottom: 32px solid transparent;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
   
-  border-left: 32px solid green;
+  border-left: 16px solid rgb(0, 26, 128);
 }
 
 .pjs-postit-circle {
