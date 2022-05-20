@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <postit:Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="sample-diagram">
   <postit:PostitBoard id="Board_1">
-   <postit:SquarePostit name="Test" id="Postit_1" color="#7EC845" />
+   <postit:PathPostit name="Awareness" id="Postit_1" color="GREY" />
+   <postit:PathPostit name="Consideration" id="Postit_2" color="GREY" />
+   <postit:PathPostit name="Consideration" id="Postit_3" color="GREY" />
+   <postit:PathPostit name="Consideration" id="Postit_4" color="GREY" />
+   <postit:PathPostit name="Consideration" id="Postit_5" color="GREY" />
+   <postit:PathPostit name="Consideration" id="Postit_6" color="GREY" />
+   <postit:PathPostit name="Consideration" id="Postit_7" color="GREY" />
+
   </postit:PostitBoard>
   <postitDi:PostitRootBoard id="RootBoard_1">
     <postitDi:PostitPlane id="PositPlane_1" boardElement="Board_1">
+
+
+
       <postitDi:PostitShape id="Postit_1_di" boardElement="Postit_1">
-        <dc:Bounds x="300" y="200" width="150" height="150" />
+        <dc:Bounds x="100" y="50" width="150" height="150" />
       </postitDi:PostitShape>
-    </postitDi:PostitPlane>
-  </postitDi:PostitRootBoard>
-
-<postit:PostitBoard id="Board_2">
-   <postit:SquarePostit name="Test" id="Postit_2" color="#7EC845" />
-  </postit:PostitBoard>
-  <postitDi:PostitRootBoard id="RootBoard_2">
-    <postitDi:PostitPlane id="PositPlane_2" boardElement="Board_2">
+    
       <postitDi:PostitShape id="Postit_2_di" boardElement="Postit_2">
-        <dc:Bounds x="500" y="200" width="150" height="150" />
+        <dc:Bounds x="350" y="50" width="150" height="150" />
       </postitDi:PostitShape>
+    
+    
+    
     </postitDi:PostitPlane>
   </postitDi:PostitRootBoard>
-
 </postit:Definitions>
