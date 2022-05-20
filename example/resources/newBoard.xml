@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <postit:Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="sample-diagram">
   <postit:PostitBoard id="Board_1">
-   <postit:PathPostit name="Awareness" id="Postit_1" color="GREY" />
-   <postit:PathPostit name="Consideration" id="Postit_2" color="GREY" />
+   <postit:PathPostit name="Pre-Awareness" id="Postit_1" color="GREY" />
+   <postit:PathPostit name="Awareness" id="Postit_2" color="GREY" />
    <postit:PathPostit name="Consideration" id="Postit_3" color="GREY" />
-   <postit:PathPostit name="Consideration" id="Postit_4" color="GREY" />
-   <postit:PathPostit name="Consideration" id="Postit_5" color="GREY" />
-   <postit:PathPostit name="Consideration" id="Postit_6" color="GREY" />
-   <postit:PathPostit name="Consideration" id="Postit_7" color="GREY" />
+   <postit:PathPostit name="Preference" id="Postit_4" color="GREY" />
+   <postit:PathPostit name="Sale" id="Postit_5" color="GREY" />
+   <postit:PathPostit name="Onboarding" id="Postit_6" color="GREY" />
+   <postit:PathPostit name="Use and Care" id="Postit_7" color="GREY" />
+   <postit:PathPostit name="Loyality" id="Postit_8" color="GREY" />
 
   </postit:PostitBoard>
   <postitDi:PostitRootBoard id="RootBoard_1">
     <postitDi:PostitPlane id="PositPlane_1" boardElement="Board_1">
-
-
 
       <postitDi:PostitShape id="Postit_1_di" boardElement="Postit_1">
         <dc:Bounds x="100" y="50" width="150" height="150" />
@@ -22,6 +21,34 @@
       <postitDi:PostitShape id="Postit_2_di" boardElement="Postit_2">
         <dc:Bounds x="350" y="50" width="150" height="150" />
       </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_3_di" boardElement="Postit_3">
+        <dc:Bounds x="600" y="50" width="150" height="150" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_4_di" boardElement="Postit_4">
+        <dc:Bounds x="850" y="50" width="150" height="150" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_5_di" boardElement="Postit_5">
+        <dc:Bounds x="1100" y="50" width="150" height="150" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_6_di" boardElement="Postit_6">
+        <dc:Bounds x="1350" y="50" width="150" height="150" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_7_di" boardElement="Postit_7">
+        <dc:Bounds x="1600" y="50" width="150" height="150" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_8_di" boardElement="Postit_8">
+        <dc:Bounds x="1850" y="50" width="150" height="150" />
+      </postitDi:PostitShape>
+
+      
+
+
     
     
     
