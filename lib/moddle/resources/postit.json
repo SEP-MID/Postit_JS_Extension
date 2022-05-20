@@ -49,6 +49,12 @@
       "name": "SquarePostit",
       "superClass": ["Postit"]
     },
+
+    {
+      "name": "PathPostit",
+      "superClass": ["Postit"]
+    },
+
     {
       "name": "CirclePostit",
       "superClass": ["Postit"]
