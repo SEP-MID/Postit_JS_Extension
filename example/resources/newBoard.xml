@@ -9,6 +9,9 @@
    <postit:PathPostit name="Onboarding" id="Postit_6" color="GREY" />
    <postit:PathPostit name="Use and Care" id="Postit_7" color="GREY" />
    <postit:PathPostit name="Loyality" id="Postit_8" color="GREY" />
+   <postit:SquarePostit name="Actions" id="Postit_9" color="RED" />
+   <postit:SquarePostit name="Goals" id="Postit_10" color="RED" />
+   <postit:SquarePostit name="Touchpoints" id="Postit_11" color="RED" />
 
   </postit:PostitBoard>
   <postitDi:PostitRootBoard id="RootBoard_1">
@@ -44,6 +47,19 @@
 
       <postitDi:PostitShape id="Postit_8_di" boardElement="Postit_8">
         <dc:Bounds x="1850" y="50" width="150" height="150" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_9_di" boardElement="Postit_9">
+        <dc:Bounds x="-115" y="250" width="200" height="150" />
+      </postitDi:PostitShape>
+
+
+     <postitDi:PostitShape id="Postit_10_di" boardElement="Postit_10">
+        <dc:Bounds x="-115" y="600" width="200" height="150" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_11_di" boardElement="Postit_11">
+        <dc:Bounds x="-115" y="1050" width="200" height="150" />
       </postitDi:PostitShape>
 
       
