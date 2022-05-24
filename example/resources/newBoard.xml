@@ -12,6 +12,8 @@
    <postit:SquarePostit name="Actions" id="Postit_9" color="RED" />
    <postit:SquarePostit name="Goals" id="Postit_10" color="RED" />
    <postit:SquarePostit name="Touchpoints" id="Postit_11" color="RED" />
+   <postit:SquarePostit name="Content 1" id="Postit_12" color="GREY" />
+
 
   </postit:PostitBoard>
   <postitDi:PostitRootBoard id="RootBoard_1">
@@ -60,6 +62,10 @@
 
       <postitDi:PostitShape id="Postit_11_di" boardElement="Postit_11">
         <dc:Bounds x="100" y="950" width="200" height="150" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_12_di" boardElement="Postit_12">
+        <dc:Bounds x="350" y="350" width="200" height="800" />
       </postitDi:PostitShape>
 
       
