@@ -51,6 +51,11 @@
     },
 
     {
+      "name": "ContentPostit",
+      "superClass": ["Postit"]
+    },
+
+    {
       "name": "PathPostit",
       "superClass": ["Postit"]
     },

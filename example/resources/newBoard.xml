@@ -12,7 +12,7 @@
    <postit:SquarePostit name="Actions" id="Postit_9" color="RED" />
    <postit:SquarePostit name="Goals" id="Postit_10" color="RED" />
    <postit:SquarePostit name="Touchpoints" id="Postit_11" color="RED" />
-   <postit:SquarePostit name="Content 1" id="Postit_12" color="GREY" />
+   <postit:ContentPostit name="Content 1" id="Postit_12" color="YELLOW" />
 
 
   </postit:PostitBoard>
