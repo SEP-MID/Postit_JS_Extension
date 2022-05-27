@@ -13,6 +13,11 @@
    <postit:SquarePostit name="Goals" id="Postit_10" color="RED" />
    <postit:SquarePostit name="Touchpoints" id="Postit_11" color="RED" />
    <postit:ContentPostit name="Content 1" id="Postit_12" color="YELLOW" />
+   <postit:ContentPostit name="Content 2" id="Postit_13" color="YELLOW" />
+   <postit:ContentPostit name="Content 3" id="Postit_14" color="YELLOW" />
+   <postit:ContentPostit name="Content 4" id="Postit_15" color="YELLOW" />
+   <postit:ContentPostit name="Content 5" id="Postit_16" color="YELLOW" />
+   <postit:ContentPostit name="Content 6" id="Postit_17" color="YELLOW" />
 
 
   </postit:PostitBoard>
@@ -66,6 +71,26 @@
 
       <postitDi:PostitShape id="Postit_12_di" boardElement="Postit_12">
         <dc:Bounds x="350" y="350" width="200" height="800" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_13_di" boardElement="Postit_13">
+        <dc:Bounds x="600" y="350" width="200" height="800" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_14_di" boardElement="Postit_14">
+        <dc:Bounds x="850" y="350" width="200" height="800" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_15_di" boardElement="Postit_15">
+        <dc:Bounds x="1100" y="350" width="200" height="800" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_16_di" boardElement="Postit_16">
+        <dc:Bounds x="1350" y="350" width="200" height="800" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_17_di" boardElement="Postit_17">
+        <dc:Bounds x="1600" y="350" width="200" height="800" />
       </postitDi:PostitShape>
 
       
