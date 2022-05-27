@@ -51,11 +51,6 @@
     },
 
     {
-      "name": "ContentPostit",
-      "superClass": ["Postit"]
-    },
-
-    {
       "name": "PathPostit",
       "superClass": ["Postit"]
     },
@@ -64,6 +59,12 @@
       "name": "CirclePostit",
       "superClass": ["Postit"]
     },
+
+    {
+      "name": "ContentPostit",
+      "superClass": ["BoardElement"]
+    },
+
     {
       "name": "TextBox",
       "superClass": ["BoardElement"]
