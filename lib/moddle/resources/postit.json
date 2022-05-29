@@ -62,7 +62,7 @@
 
     {
       "name": "ContentPostit",
-      "superClass": ["BoardElement"]
+      "superClass": ["Postit"]
     },
 
     {
