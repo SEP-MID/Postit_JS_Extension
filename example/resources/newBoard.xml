@@ -9,15 +9,15 @@
    <postit:PathPostit name="Onboarding" id="Postit_6" color="GREY" />
    <postit:PathPostit name="Use and Care" id="Postit_7" color="GREY" />
    <postit:PathPostit name="Loyality" id="Postit_8" color="GREY" />
-   <postit:SquarePostit name="Actions" id="Postit_9" color="RED" />
-   <postit:SquarePostit name="Goals" id="Postit_10" color="RED" />
-   <postit:SquarePostit name="Touchpoints" id="Postit_11" color="RED" />
-   <postit:ContentPostit name="Content 1" id="Postit_12" color="YELLOW" />
-   <postit:ContentPostit name="Content 2" id="Postit_13" color="YELLOW" />
-   <postit:ContentPostit name="Content 3" id="Postit_14" color="YELLOW" />
-   <postit:ContentPostit name="Content 4" id="Postit_15" color="YELLOW" />
-   <postit:ContentPostit name="Content 5" id="Postit_16" color="YELLOW" />
-   <postit:ContentPostit name="Content 6" id="Postit_17" color="YELLOW" />
+   <postit:SquarePostit name="Actions" id="Postit_9" color="GREEN" />
+   <postit:SquarePostit name="Goals" id="Postit_10" color="GREEN" />
+   <postit:SquarePostit name="Touchpoints" id="Postit_11" color="GREEN" />
+   <postit:ContentPostit name="" id="Postit_12" color="YELLOW" />
+   <postit:ContentPostit name="" id="Postit_13" color="YELLOW" />
+   <postit:ContentPostit name="" id="Postit_14" color="YELLOW" />
+   <postit:ContentPostit name="" id="Postit_15" color="YELLOW" />
+   <postit:ContentPostit name="" id="Postit_16" color="YELLOW" />
+   <postit:ContentPostit name="" id="Postit_17" color="YELLOW" />
 
 
   </postit:PostitBoard>

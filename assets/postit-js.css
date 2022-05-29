@@ -154,23 +154,30 @@ button:hover, a:hover {
 
 /* canvas drawing */
 
-.pjs-postit-square {
+
+/* rect not needed at the moment*/
+
+.pjs-postit-rect {
   margin: 8px;
   width: 32px !important;
   height: 32px !important;
-  background-color: #0adc37;
+  background-color: #dc0a0a;
 }
 
+
+
+/* TO Do: neue Form Suchen */
 
 .pjs-postit-process {
   margin: 8px;
-  width: 0; 
-  height: 0; 
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  
-  border-left: 16px solid rgb(0, 26, 128);
+  border-radius: 90px;
+  width: 32px !important;
+  height: 32px !important;
+  background-color: #f46f60;
 }
+
+
+/* Form in der Palette für Kreise */
 
 .pjs-postit-circle {
   margin: 8px;
@@ -179,6 +186,21 @@ button:hover, a:hover {
   height: 32px !important;
   background-color: #f46f60;
 }
+
+
+/* Form in der Palette für 4-Ecke */
+
+.pjs-postit-square2 {
+  margin: 8px;
+  width: 32px !important;
+  height: 32px !important;
+  background-color: #06a106;
+}
+
+
+
+
+
 
 .pjs-image {
   background-image: url("./icons/image.svg");
