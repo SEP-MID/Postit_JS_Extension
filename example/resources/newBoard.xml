@@ -18,8 +18,15 @@
    <postit:ContentPostit name="" id="Postit_15" color="YELLOW" />
    <postit:ContentPostit name="" id="Postit_16" color="YELLOW" />
    <postit:ContentPostit name="" id="Postit_17" color="YELLOW" />
-
-
+   <postit:ContentPostit name="" id="Postit_18" color="YELLOW" />
+   <postit:ContentPostit name="" id="Postit_19" color="YELLOW" />
+   <postit:Group name="" id="Postit_20" color="YELLOW" />
+   <postit:Group name="" id="Postit_21" color="YELLOW" />
+   <postit:Group name="" id="Postit_22" color="YELLOW" />
+  
+  
+  
+  
   </postit:PostitBoard>
   <postitDi:PostitRootBoard id="RootBoard_1">
     <postitDi:PostitPlane id="PositPlane_1" boardElement="Board_1">
@@ -93,6 +100,27 @@
         <dc:Bounds x="1600" y="350" width="200" height="800" />
       </postitDi:PostitShape>
 
+      <postitDi:PostitShape id="Postit_18_di" boardElement="Postit_18">
+        <dc:Bounds x="1850" y="350" width="200" height="800" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_19_di" boardElement="Postit_19">
+        <dc:Bounds x="2100" y="350" width="200" height="800" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_20_di" boardElement="Postit_20">
+        <dc:Bounds x="320" y="300" width="2000" height="280" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_21_di" boardElement="Postit_21">
+        <dc:Bounds x="320" y="600" width="2000" height="280" />
+      </postitDi:PostitShape>
+
+      <postitDi:PostitShape id="Postit_22_di" boardElement="Postit_22">
+        <dc:Bounds x="320" y="900" width="2000" height="280" />
+      </postitDi:PostitShape>
+
+  
       
 
 
