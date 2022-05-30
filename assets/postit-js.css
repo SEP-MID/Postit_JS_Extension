@@ -197,6 +197,13 @@ button:hover, a:hover {
   background-color: #06a106;
 }
 
+.pjs-postit-square3 {
+  margin: 8px;
+  width: 32px !important;
+  height: 32px !important;
+  background-color: #161716;
+}
+
 
 
 
