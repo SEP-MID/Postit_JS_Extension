@@ -54,6 +54,10 @@
         }
       ]
     },
+
+
+
+
     {
       "name": "SquarePostit",
       "superClass": ["Postit"]
@@ -71,7 +75,14 @@
 
     {
       "name": "ContentPostit",
-      "superClass": ["Postit"]
+      "superClass": ["Postit"],
+      "properties": [
+        {
+          "name": "boardElements",
+          "isMany": true,
+          "type": "BoardElement"
+        }
+      ]
     },
 
     {
@@ -93,6 +104,9 @@
         }
       ]
     },
+
+
+
     {
       "name": "RootElement",
       "isAbstract": true,
@@ -100,6 +114,9 @@
         "BoardElement"
       ]
     },
+
+
+
     {
       "name": "Definitions",
       "superClass": [
