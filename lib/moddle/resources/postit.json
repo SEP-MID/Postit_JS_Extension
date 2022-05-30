@@ -5,6 +5,9 @@
   "xml": {
     "tagAlias": "lowerCase"
   },
+
+
+
   "types": [
     {
       "name": "BoardElement",
@@ -23,6 +26,9 @@
         }
       ]
     },
+
+
+
     {
       "name": "PostitBoard",
       "superClass": ["RootElement"],
@@ -34,6 +40,9 @@
         }
       ]
     },
+
+
+
     {
       "name": "Postit",
       "superClass": ["BoardElement"],

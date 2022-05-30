@@ -12,6 +12,9 @@
    <postit:SquarePostit name="Actions" id="Postit_9" color="" />
    <postit:SquarePostit name="Goals" id="Postit_10" color="" />
    <postit:SquarePostit name="Touchpoints" id="Postit_11" color="" />
+   <postit:Group name="" id="Postit_20" color="YELLOW" />
+   <postit:Group name="" id="Postit_21" color="YELLOW" />
+   <postit:Group name="" id="Postit_22" color="YELLOW" />
    <postit:ContentPostit name="" id="Postit_12" color="" />
    <postit:ContentPostit name="" id="Postit_13" color="" />
    <postit:ContentPostit name="" id="Postit_14" color="" />
@@ -20,9 +23,9 @@
    <postit:ContentPostit name="" id="Postit_17" color="" />
    <postit:ContentPostit name="" id="Postit_18" color="" />
    <postit:ContentPostit name="" id="Postit_19" color="" />
-   <postit:Group name="" id="Postit_20" color="YELLOW" />
-   <postit:Group name="" id="Postit_21" color="YELLOW" />
-   <postit:Group name="" id="Postit_22" color="YELLOW" />
+   
+   
+   
   
   
   
