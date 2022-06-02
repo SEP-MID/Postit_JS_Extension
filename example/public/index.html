@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Journey Map</title>
+  
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+
+  <h1>Customer Journey Map</h1> 
+  <div id="io-dialog-main" class="pjs-io-dialog pjs-io-dialog-open keybindings-dialog">
+    <div class="pjs-io-dialog-content">
+      <h1>Keyboard Shortcuts</h1>
+      <table>
+        <tbody>
+          <tr>
+            <td>Undo</td>
+            <td class="binding">⌘ + Z</td>
+          </tr>
+          <tr>
+            <td>Redo</td>
+            <td class="binding">⌘ + ⇧ + Z</td>
+          </tr>
+          <tr>
+            <td>Select All</td>
+            <td class="binding">⌘ + A</td>
+          </tr>
+         <tr>
+            <td>Zooming</td>
+            <td class="binding">ctrl + Scrolling</td>
+          </tr>
+          <!-- <tr>
+            <td>Scrolling (Vertical)</td>
+            <td class="binding">⌥ + Scrolling</td>
+          </tr>
+          <tr>
+            <td>Scrolling (Horizontal)</td>
+            <td class="binding">⌥ + ⇧ + Scrolling</td>
+          </tr>-->
+          <tr>
+            <td>Direct Editing</td>
+            <td class="binding">E</td>
+          </tr>
+          <tr>
+            <td>Hand Tool</td>
+            <td class="binding">H</td>
+          </tr>
+          <tr>
+            <td>Lasso Tool</td>
+            <td class="binding">L</td>
+          </tr>
+          <tr>
+            <td>Space Tool</td>
+            <td class="binding">S</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+<!--Hier wird das Canvas in den Code geladen, alle Abhängigkeiten befinden sich im Ordner: "Lib"-->
+
+  <div id="canvas"></div>
+
+
+<!--Hier werden die top und bottom buttons  der html definiert-->
+
+  <div id="io-editing-tools-buttons" class="pjs-buttons">
+    <ul class="pjs-horizontal">
+        <li>
+          <button id="js-toggle-keyboard-help" class="pjs-buttons-active" title="Toggle keyboard shortcuts overlay">
+            <span class="icon-keyboard pjs-general-icon"> </span>
+          </button>
+        </li>
+        <li>
+          <button id="js-toggle-fullscreen" class="pjs-buttons-active" title="Toggle Fullscreen" >
+            <span class="icon-resize-full pjs-general-icon"> </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+
+  
+
+  <div class="bottom-buttons pjs-buttons">
+    <ul>
+      <li>
+        open
+      </li>
+      <li>
+        <button id="js-open-board" class="pjs-buttons-active" title="open XML board">
+          Postit XML file
+        </button>
+      </li>
+      <li>
+        <button id="js-open-new" href class="pjs-buttons-active" title="open new board">
+          New Board
+        </button>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        download
+      </li>
+      <li>
+        <a id="js-download-board" href title="download XML board">
+          Postit XML file
+        </a>
+      </li>
+      <li>
+        <a id="js-download-svg" href title="download as SVG image">
+          SVG image
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://browser.sentry-cdn.com/5.15.5/bundle.min.js" integrity="sha384-wF7Jc4ZlWVxe/L8Ji3hOIBeTgo/HwFuaeEfjGmS3EXAG7Y+7Kjjr91gJpJtr+PAT" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72700874-2"></script>
+
+  <script src="app.js"></script>
+</html>
