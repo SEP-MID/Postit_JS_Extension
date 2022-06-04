@@ -5,7 +5,7 @@
 }
 
 @font-face {font-family: "Font Awesome 5 Free Solid";
-  src: url("./font-awesome-5/29f589f173dcc69ef6c805b711894998.eot"); /* IE9*/
+  src: url("./font-awesome-5/29f589f173dcc69ef6c805b711894998.eot") format("embedded-opentype"); /* IE9*/
   src: url("./font-awesome-5/29f589f173dcc69ef6c805b711894998.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
   url("./font-awesome-5/29f589f173dcc69ef6c805b711894998.woff2") format("woff2"), /* chrome、firefox */
   url("./font-awesome-5/29f589f173dcc69ef6c805b711894998.woff") format("woff"), /* chrome、firefox */
