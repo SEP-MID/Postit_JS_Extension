@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <postit:Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="sample-diagram">
   <postit:PostitBoard id="Board_1">
-   <postit:PathPostit name="Pre-Awareness" id="Postit_1" color="" />
+   <postit:SquarePostit name="Pre-Awareness" id="Postit_1" color="" />
    <postit:PathPostit name="Awareness" id="Postit_2" color="" />
    <postit:PathPostit name="Consideration" id="Postit_3" color="" />
    <postit:PathPostit name="Preference" id="Postit_4" color="" />
@@ -15,21 +15,21 @@
    <postit:Group name="" id="Postit_20" color="YELLOW" />
    <postit:Group name="" id="Postit_21" color="YELLOW" />
    <postit:Group name="" id="Postit_22" color="YELLOW" />
-   <postit:ContentPostit name="" id="Postit_12" color="" />
-   <postit:ContentPostit name="" id="Postit_13" color="" />
-   <postit:ContentPostit name="" id="Postit_14" color="" />
-   <postit:ContentPostit name="" id="Postit_15" color="" />
-   <postit:ContentPostit name="" id="Postit_16" color="" />
-   <postit:ContentPostit name="" id="Postit_17" color="" />
-   <postit:ContentPostit name="" id="Postit_18" color="" />
-   <postit:ContentPostit name="" id="Postit_19" color="" />
+   <postit:ContentPostit name="Pre-Awareness" id="Postit_12" color="" />
+   <postit:ContentPostit name="Awareness" id="Postit_13" color="" />
+   <postit:ContentPostit name="Consideration" id="Postit_14" color="" />
+   <postit:ContentPostit name="Preference" id="Postit_15" color="" />
+   <postit:ContentPostit name="Sale" id="Postit_16" color="" />
+   <postit:ContentPostit name="Onboarding" id="Postit_17" color="" />
+   <postit:ContentPostit name="Use and Care" id="Postit_18" color="" />
+   <postit:ContentPostit name="Loyalty" id="Postit_19" color="" />
   
   </postit:PostitBoard>
   <postitDi:PostitRootBoard id="RootBoard_1">
     <postitDi:PostitPlane id="PositPlane_1" boardElement="Board_1">
 
       <postitDi:PostitShape id="Postit_1_di" boardElement="Postit_1">
-        <dc:Bounds x="350" y="50" width="150" height="150" />
+        <dc:Bounds x="350" y="75" width="200" height="150" />
       </postitDi:PostitShape>
     
       <postitDi:PostitShape id="Postit_2_di" boardElement="Postit_2">

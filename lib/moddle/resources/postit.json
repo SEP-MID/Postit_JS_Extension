@@ -60,7 +60,14 @@
 
     {
       "name": "SquarePostit",
-      "superClass": ["Postit"]
+      "superClass": ["Postit"],
+      "properties": [
+        {
+          "name": "boardElements",
+          "isMany": true,
+          "type": "BoardElement"
+        }
+      ]
     },
 
     {
