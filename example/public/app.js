@@ -13474,6 +13474,21 @@ function PostitRenderer(
     });
   }
 
+// Neue Funktion für Abstand von ContentBox-Texten 
+  function renderEmbeddedLabel2(parentGfx, element, align, fontSize) {
+    var semantic = (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getSemantic)(element);
+
+    return renderLabel(parentGfx, semantic.name, {
+      box: element,
+      align: align,
+      padding: 40,
+      style: {
+        fill: getColor(element) === 'black' ? 'white' : 'black',
+        fontSize: fontSize || DEFAULT_TEXT_SIZE
+      },
+    });
+  }
+
 
   function renderExternalLabel(parentGfx, element) {
 
@@ -13541,7 +13556,7 @@ function PostitRenderer(
 
       var rect = drawRect(parentGfx, element.width, element.height, 0, attrs);
 
-      renderEmbeddedLabel(parentGfx, element, 'center-top');
+      renderEmbeddedLabel2(parentGfx, element, 'center-top');
 
       return rect;
     },
