@@ -292,6 +292,12 @@ button:hover, a:hover {
   background-color: black !important;
 }
 
+.pjs-color-entry-WHITE {
+  background-color: white !important;
+  border-color:rgb(255, 116, 0);
+  border-width: 2;
+}
+
 .pjs-horizontal {
   display: inline-block;
 }
