@@ -13540,7 +13540,7 @@ function PostitRenderer(
       if ((0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor) == 'grey') {
         var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
           stroke: 'red',
-          strokeWidth: 2,
+          strokeWidth: 4,
           fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
           pointerEvents: 'none'
         });
@@ -13549,7 +13549,7 @@ function PostitRenderer(
       if ((0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor) == 'white') {
         var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
           stroke: 'red',
-          strokeWidth: 2,
+          strokeWidth: 4,
           fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
           pointerEvents: 'none'
         });
