@@ -52,7 +52,14 @@
 
     {
       "name": "ContentPostit",
-      "superClass": ["Postit"]
+      "superClass": ["Postit"],
+      "properties": [
+        {
+          "name": "boardElements",
+          "isMany": true,
+          "type": "BoardElement"
+        }
+      ]
     },
 
     {
