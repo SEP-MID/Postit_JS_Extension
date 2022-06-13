@@ -189,6 +189,14 @@ button:hover, a:hover {
   height: 32px !important;
 }
 
+.pjs-postit-square2 {
+  margin: 8px;
+  width: 32px !important;
+  height: 32px !important;
+  background-color: #0adc37;
+}
+
+
 .pjs-image:hover {
   fill: rgb(255, 116, 0);;
 }
