@@ -13615,7 +13615,7 @@ function PostitRenderer(
         attrs.fillOpacity = DEFAULT_FILL_OPACITY;
       }
 
-      const d = "M 1 1 L 37 1 L 160 1 L 226 89 L 161 172 L 1 171 Z";  //Pfad eingeben
+      const d = "M 71 0 A 1 1 0 0 0 54 110 A 1 1 0 0 0 71 0 Z M 84 20 A 1 1 0 0 0 87 45 A 1 1 0 0 0 84 20 Z M 52 42 A 1 1 0 0 0 38 22 A 1 1 0 0 0 52 42 Z M 30 59 A 1 1 0 0 0 97 60 L 43 59 Z";  //Pfad eingeben
       var rect = drawPath(parentGfx, d, 0, attrs);
     
 
@@ -13698,6 +13698,7 @@ function PostitRenderer(
           width: element.width,
           height: element.height,
           href: getImageSource(element)
+          
         });
 
         (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.append)(parentGfx, gfx);
@@ -13705,6 +13706,8 @@ function PostitRenderer(
 
       return gfx;
     },
+
+
 
     'label': function(parentGfx, element) {
       return renderExternalLabel(parentGfx, element);
@@ -19895,10 +19898,10 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
 //Erstellen der neuen SVG Shape --> Path; to-do: Anpassen des 1. Parameter (Type): Path: M 2 3 L 10 3 L 13 6 L 10 9 L 2 9 L 2 3
 // CSS des kleinen Icons kann hier geändert werden: PostitJS.CSS -->  .pjs-postit-process
 
-    //'create.path-postit': createAction(
-    //'postit:PathPostit', 'postits', 'pjs-postit-process',
-    //translate('Neue Customer Journey Stage hinzufügen'), 
-    //),
+    'create.path-postit': createAction(
+    'postit:PathPostit', 'postits', 'pjs-postit-process',
+    translate('Emotion positiv'), 
+    ),
 
     // Content Bereich, in diesen können Sticker gezogen werden 
 
@@ -19915,15 +19918,15 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     
     
     
-    //'create.image': {
-    //  group: 'artifact',
-    //  className: 'pjs-bild',
-    //  title: translate('Bild einfügen'),
-    //  action: {
-    //    click: createImage,
-    //    dragstart: createImage
-    //  }
-    //},
+    'create.image': {
+      group: 'artifact',
+      className: 'pjs-bild',
+      title: translate('Bild einfügen'),
+      action: {
+        click: createImage,
+        dragstart: createImage
+      }
+    },
 
 
     'create.text-box': createAction(
@@ -20687,6 +20690,13 @@ function canDrop(element, target) {
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:ContentPostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:PostitBoard')) {
     return true;
   }
+
+
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:Image') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:PostitBoard')) {
+    return true;
+  }
+
+  
 
   // Square-ELemente in den Content-Bereich ziehen
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:SquarePostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:ContentPostit')) {
