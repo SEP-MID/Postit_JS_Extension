@@ -11221,7 +11221,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<postit:Definitions xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:dc=\"http://www.omg.org/spec/DD/20100524/DC\" id=\"sample-diagram\">\r\n  <postit:PostitBoard id=\"Board_1\">\r\n   <postit:SquarePostit name=\"Actions\" id=\"Postit_1\" color=\"\" />\r\n   <postit:SquarePostit name=\"Goals\" id=\"Postit_2\" color=\"\" />\r\n   <postit:SquarePostit name=\"Touchpoints\" id=\"Postit_3\" color=\"\" />\r\n   <postit:Group name=\"\" id=\"Postit_4\" color=\"YELLOW\" />\r\n   <postit:Group name=\"\" id=\"Postit_5\" color=\"YELLOW\" />\r\n   <postit:Group name=\"\" id=\"Postit_6\" color=\"YELLOW\" />\r\n   <postit:ContentPostit name=\"Pre-Awareness\" id=\"Postit_7\" color=\"\" />\r\n   <postit:ContentPostit name=\"Awareness\" id=\"Postit_8\" color=\"\" />\r\n   <postit:ContentPostit name=\"Consideration\" id=\"Postit_9\" color=\"\" />\r\n   <postit:ContentPostit name=\"Preference\" id=\"Postit_10\" color=\"\" />\r\n   <postit:ContentPostit name=\"Sale\" id=\"Postit_11\" color=\"\" />\r\n   <postit:ContentPostit name=\"Onboarding\" id=\"Postit_12\" color=\"\" />\r\n   <postit:ContentPostit name=\"Use and Care\" id=\"Postit_13\" color=\"\" />\r\n   <postit:ContentPostit name=\"Loyalty\" id=\"Postit_14\" color=\"\" />\r\n  \r\n  </postit:PostitBoard>\r\n  <postitDi:PostitRootBoard id=\"RootBoard_1\">\r\n    <postitDi:PostitPlane id=\"PositPlane_1\" boardElement=\"Board_1\">\r\n\r\n      <postitDi:PostitShape id=\"Postit_1_di\" boardElement=\"Postit_1\">\r\n        <dc:Bounds x=\"100\" y=\"350\" width=\"200\" height=\"150\" />\r\n      </postitDi:PostitShape>\r\n\r\n     <postitDi:PostitShape id=\"Postit_2_di\" boardElement=\"Postit_2\">\r\n        <dc:Bounds x=\"100\" y=\"650\" width=\"200\" height=\"150\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_3_di\" boardElement=\"Postit_3\">\r\n        <dc:Bounds x=\"100\" y=\"950\" width=\"200\" height=\"150\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_4_di\" boardElement=\"Postit_4\">\r\n        <dc:Bounds x=\"320\" y=\"300\" width=\"2025\" height=\"280\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_5_di\" boardElement=\"Postit_5\">\r\n        <dc:Bounds x=\"320\" y=\"600\" width=\"2025\" height=\"280\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_6_di\" boardElement=\"Postit_6\">\r\n        <dc:Bounds x=\"320\" y=\"900\" width=\"2025\" height=\"280\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_7_di\" boardElement=\"Postit_7\">\r\n        <dc:Bounds x=\"350\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_8_di\" boardElement=\"Postit_8\">\r\n        <dc:Bounds x=\"600\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_9_di\" boardElement=\"Postit_9\">\r\n        <dc:Bounds x=\"850\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_10_di\" boardElement=\"Postit_10\">\r\n        <dc:Bounds x=\"1100\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_11_di\" boardElement=\"Postit_11\">\r\n        <dc:Bounds x=\"1350\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_12_di\" boardElement=\"Postit_12\">\r\n        <dc:Bounds x=\"1600\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_13_di\" boardElement=\"Postit_13\">\r\n        <dc:Bounds x=\"1850\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_14_di\" boardElement=\"Postit_14\">\r\n        <dc:Bounds x=\"2100\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      \r\n\r\n  \r\n      \r\n\r\n\r\n    \r\n    \r\n    \r\n    </postitDi:PostitPlane>\r\n  </postitDi:PostitRootBoard>\r\n</postit:Definitions>");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<postit:Definitions xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:dc=\"http://www.omg.org/spec/DD/20100524/DC\" id=\"sample-diagram\">\r\n  <postit:PostitBoard id=\"Board_1\">\r\n   <postit:StagesPostit name=\"Actions\" id=\"Postit_1\" color=\"\" />\r\n   <postit:StagesPostit name=\"Goals\" id=\"Postit_2\" color=\"\" />\r\n   <postit:StagesPostit name=\"Touchpoints\" id=\"Postit_3\" color=\"\" />\r\n   <postit:Group name=\"\" id=\"Postit_4\" color=\"YELLOW\" />\r\n   <postit:Group name=\"\" id=\"Postit_5\" color=\"YELLOW\" />\r\n   <postit:Group name=\"\" id=\"Postit_6\" color=\"YELLOW\" />\r\n   <postit:ContentPostit name=\"Pre-Awareness\" id=\"Postit_7\" color=\"\" />\r\n   <postit:ContentPostit name=\"Awareness\" id=\"Postit_8\" color=\"\" />\r\n   <postit:ContentPostit name=\"Consideration\" id=\"Postit_9\" color=\"\" />\r\n   <postit:ContentPostit name=\"Preference\" id=\"Postit_10\" color=\"\" />\r\n   <postit:ContentPostit name=\"Sale\" id=\"Postit_11\" color=\"\" />\r\n   <postit:ContentPostit name=\"Onboarding\" id=\"Postit_12\" color=\"\" />\r\n   <postit:ContentPostit name=\"Use and Care\" id=\"Postit_13\" color=\"\" />\r\n   <postit:ContentPostit name=\"Loyalty\" id=\"Postit_14\" color=\"\" />\r\n  \r\n  </postit:PostitBoard>\r\n  <postitDi:PostitRootBoard id=\"RootBoard_1\">\r\n    <postitDi:PostitPlane id=\"PositPlane_1\" boardElement=\"Board_1\">\r\n\r\n      <postitDi:PostitShape id=\"Postit_1_di\" boardElement=\"Postit_1\">\r\n        <dc:Bounds x=\"100\" y=\"350\" width=\"200\" height=\"150\" />\r\n      </postitDi:PostitShape>\r\n\r\n     <postitDi:PostitShape id=\"Postit_2_di\" boardElement=\"Postit_2\">\r\n        <dc:Bounds x=\"100\" y=\"650\" width=\"200\" height=\"150\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_3_di\" boardElement=\"Postit_3\">\r\n        <dc:Bounds x=\"100\" y=\"950\" width=\"200\" height=\"150\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_4_di\" boardElement=\"Postit_4\">\r\n        <dc:Bounds x=\"320\" y=\"300\" width=\"2025\" height=\"280\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_5_di\" boardElement=\"Postit_5\">\r\n        <dc:Bounds x=\"320\" y=\"600\" width=\"2025\" height=\"280\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_6_di\" boardElement=\"Postit_6\">\r\n        <dc:Bounds x=\"320\" y=\"900\" width=\"2025\" height=\"280\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_7_di\" boardElement=\"Postit_7\">\r\n        <dc:Bounds x=\"350\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_8_di\" boardElement=\"Postit_8\">\r\n        <dc:Bounds x=\"600\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_9_di\" boardElement=\"Postit_9\">\r\n        <dc:Bounds x=\"850\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_10_di\" boardElement=\"Postit_10\">\r\n        <dc:Bounds x=\"1100\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_11_di\" boardElement=\"Postit_11\">\r\n        <dc:Bounds x=\"1350\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_12_di\" boardElement=\"Postit_12\">\r\n        <dc:Bounds x=\"1600\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_13_di\" boardElement=\"Postit_13\">\r\n        <dc:Bounds x=\"1850\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      <postitDi:PostitShape id=\"Postit_14_di\" boardElement=\"Postit_14\">\r\n        <dc:Bounds x=\"2100\" y=\"100\" width=\"200\" height=\"1050\" />\r\n      </postitDi:PostitShape>\r\n\r\n      \r\n\r\n  \r\n      \r\n\r\n\r\n    \r\n    \r\n    \r\n    </postitDi:PostitPlane>\r\n  </postitDi:PostitRootBoard>\r\n</postit:Definitions>");
 
 /***/ }),
 
@@ -13259,9 +13259,508 @@ function format(str, obj) {
 /*!*************************************!*\
   !*** ../lib/draw/PostitRenderer.js ***!
   \*************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module parse failed: Unexpected token (279:56)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| \n|       var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {\n>         stroke: getFillColor(element, defaultFillColor),,\n|         strokeWidth: 2,\n|         fill: getFillColor(element, defaultFillColor),");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PostitRenderer)
+/* harmony export */ });
+/* harmony import */ var inherits__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! inherits */ "../node_modules/inherits/inherits_browser.js");
+/* harmony import */ var inherits__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(inherits__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var min_dash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! min-dash */ "../node_modules/min-dash/dist/index.esm.js");
+/* harmony import */ var tiny_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tiny-svg */ "../node_modules/tiny-svg/dist/index.esm.js");
+/* harmony import */ var diagram_js_lib_draw_BaseRenderer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! diagram-js/lib/draw/BaseRenderer */ "../node_modules/diagram-js/lib/draw/BaseRenderer.js");
+/* harmony import */ var _features_label_editing_LabelUtil__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../features/label-editing/LabelUtil */ "../lib/features/label-editing/LabelUtil.js");
+/* harmony import */ var _util_ModelUtil__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../util/ModelUtil */ "../lib/util/ModelUtil.js");
+/* harmony import */ var _PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PostitRendererUtil */ "../lib/draw/PostitRendererUtil.js");
+//Hier werden die: Shape-Erstellen Funktionen geschrieben, Referenz auf SVG Library
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var DEFAULT_FILL_OPACITY = .95;
+
+var TASK_BORDER_RADIUS = 10;
+
+var DEFAULT_TEXT_SIZE = 16;
+
+function PostitRenderer(
+    config, eventBus, styles, pathMap,
+    canvas, textRenderer, priority) {
+
+  diagram_js_lib_draw_BaseRenderer__WEBPACK_IMPORTED_MODULE_1__["default"].call(this, eventBus, priority);
+
+  var defaultFillColor = config && config.defaultFillColor,
+      defaultStrokeColor = config && config.defaultStrokeColor;
+
+  var computeStyle = styles.computeStyle;
+
+
+
+
+
+// Ab hier Funktionen: drawCircle, drawRect, drawPath
+
+// 1. Funktion: Kreis
+
+  function drawCircle(parentGfx, width, height, offset, attrs) {
+
+    if ((0,min_dash__WEBPACK_IMPORTED_MODULE_2__.isObject)(offset)) {
+      attrs = offset;
+      offset = 0;
+    }
+
+    offset = offset || 0;
+
+    attrs = computeStyle(attrs, {
+      stroke: 'black',
+      strokeWidth: 2,
+      fill: 'white'
+    });
+
+    if (attrs.fill === 'none') {
+      delete attrs.fillOpacity;
+    }
+
+    var cx = width / 2,
+        cy = height / 2;
+
+    var circle = (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.create)('circle');
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.attr)(circle, {
+      cx: cx,
+      cy: cy,
+      r: Math.round((width + height) / 4 - offset)
+    });
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.attr)(circle, attrs);
+
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.append)(parentGfx, circle);
+
+    return circle;
+  }
+
+
+// 2. Funktion Rechteck malen 
+
+
+  function drawRect(parentGfx, width, height, r, offset, attrs) {
+
+    if ((0,min_dash__WEBPACK_IMPORTED_MODULE_2__.isObject)(offset)) {
+      attrs = offset;
+      offset = 0;
+    }
+
+    offset = offset || 0;
+
+    attrs = computeStyle(attrs, {
+      stroke: 'black',
+      strokeWidth: 2,
+      fill: 'white'
+    });
+
+    var rect = (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.create)('rect');
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.attr)(rect, {
+      x: offset,
+      y: offset,
+      width: width - offset * 2,
+      height: height - offset * 2,
+      rx: r,
+      ry: r
+    });
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.attr)(rect, attrs);
+
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.append)(parentGfx, rect);
+
+    return rect;
+  }
+
+
+// 3. Funktion: Pfad malen
+
+  function drawPath(parentGfx, d, offset, attrs) {
+
+    if ((0,min_dash__WEBPACK_IMPORTED_MODULE_2__.isObject)(offset)) {
+      attrs = offset;
+      offset = 0;
+    }
+
+    offset = offset || 0;
+    
+    attrs = computeStyle(attrs, {
+      strokeWidth: 2, //Breite der Kontur
+      stroke: 'black', //Farbe der Kontur
+    });
+
+    var path = (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.create)('path');
+
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.attr)(path,{ d: d }); 
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.attr)(path, attrs);
+
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.append)(parentGfx, path);
+
+    return path;
+  }
+
+
+  //4. Funktion : DrawLine
+
+  function drawLine(parentGfx, waypoints, attrs) {
+    attrs = computeStyle(attrs, [ 'no-fill' ], {
+      stroke: black,
+      strokeWidth: 2,
+      fill: 'none'
+    });
+
+    var line = createLine(waypoints, attrs);
+
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.append)(parentGfx, line);
+
+    return line;
+  }
+
+
+
+  function renderLabel(parentGfx, label, options) {
+
+    options = (0,min_dash__WEBPACK_IMPORTED_MODULE_2__.assign)({
+      size: {
+        width: 100
+      }
+    }, options);
+
+    var text = textRenderer.createText(label || '', options);
+
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.classes)(text).add('djs-label');
+
+    (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.append)(parentGfx, text);
+
+    return text;
+  }
+
+  function renderEmbeddedLabel(parentGfx, element, align, fontSize) {
+    var semantic = (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getSemantic)(element);
+
+    return renderLabel(parentGfx, semantic.name, {
+      box: element,
+      align: align,
+      padding: 5,
+      style: {
+        fill: getColor(element) === 'black' ? 'white' : 'black',
+        fontSize: fontSize || DEFAULT_TEXT_SIZE
+      },
+    });
+  }
+
+// Neue Funktion für Abstand von ContentBox-Texten 
+  function renderEmbeddedLabel2(parentGfx, element, align, fontSize) {
+    var semantic = (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getSemantic)(element);
+
+    return renderLabel(parentGfx, semantic.name, {
+      box: element,
+      align: align,
+      padding: 40,
+      style: {
+        fill: getColor(element) === 'black' ? 'white' : 'black',
+        fontSize: fontSize || DEFAULT_TEXT_SIZE
+      },
+    });
+  }
+
+
+  function renderExternalLabel(parentGfx, element) {
+
+    var box = {
+      width: 90,
+      height: 30,
+      x: element.width / 2 + element.x,
+      y: element.height / 2 + element.y
+    };
+
+    return renderLabel(parentGfx, (0,_features_label_editing_LabelUtil__WEBPACK_IMPORTED_MODULE_5__.getLabel)(element), {
+      box: box,
+      fitBox: true,
+      style: (0,min_dash__WEBPACK_IMPORTED_MODULE_2__.assign)(
+        {},
+        textRenderer.getExternalStyle(),
+        {
+          fill: 'black'
+        }
+      )
+    });
+  }
+
+
+
+// extension API, use at your own risk
+// Anmerkung Lasse: Was ist das?
+  this._drawPath = drawPath;
+
+
+
+      // Handler für Square-Shape
+      // Besonderheit: weisse und graue Shapes dienen als Moment of truth, daher werden diese mit einem roten Rand gerendert
+  this.handlers = {
+    'postit:SquarePostit': function(parentGfx, element) {
+
+      var attrs = {
+        fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+        stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getStrokeColor)(element, defaultStrokeColor)
+      };
+
+      if (!('fillOpacity' in attrs)) {
+        attrs.fillOpacity = DEFAULT_FILL_OPACITY;
+      }
+
+      var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
+        stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+        strokeWidth: 2,
+        fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+        pointerEvents: 'none'
+      });
+
+      if ((0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor) == 'grey') {
+        var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
+          stroke: 'red',
+          strokeWidth: 2,
+          fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+          pointerEvents: 'none'
+        });
+      }
+
+      if ((0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor) == 'white') {
+        var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
+          stroke: 'red',
+          strokeWidth: 2,
+          fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+          pointerEvents: 'none'
+        });
+      }
+
+      renderEmbeddedLabel(parentGfx, element, 'center-middle');
+
+      return rect;
+    },
+
+
+    //  Handler für Inhalte / vordefinierte Boxen auf dem Canvas
+
+    'postit:ContentPostit': function(parentGfx, element) {
+
+      var attrs = {
+        fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+        stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getStrokeColor)(element, defaultStrokeColor)
+      };
+
+      if (!('fillOpacity' in attrs)) {
+        attrs.fillOpacity = DEFAULT_FILL_OPACITY;
+      }
+
+      var rect = drawRect(parentGfx, element.width, element.height, 0, attrs);
+
+      renderEmbeddedLabel2(parentGfx, element, 'center-top');
+
+      return rect;
+    },
+
+
+    'postit:StagesPostit': function(parentGfx, element) {
+
+      var attrs = {
+        fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+        stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getStrokeColor)(element, defaultStrokeColor)
+      };
+
+      if (!('fillOpacity' in attrs)) {
+        attrs.fillOpacity = DEFAULT_FILL_OPACITY;
+      }
+
+      var rect = drawRect(parentGfx, element.width, element.height, 0, attrs);
+
+      renderEmbeddedLabel(parentGfx, element, 'center-middle');
+
+      return rect;
+    },
+
+
+
+
+    // Handler für Process-Shape, Bezug auf die Funktion: drawPath, Versuch das ganze über einen path darzustellen 
+    'postit:PathPostit': function(parentGfx, element) {
+
+      var attrs = {
+        fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+        stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getStrokeColor)(element, defaultStrokeColor)
+      };
+
+      if (!('fillOpacity' in attrs)) {
+        attrs.fillOpacity = DEFAULT_FILL_OPACITY;
+      }
+
+      const d = "M 1 1 L 37 1 L 160 1 L 226 89 L 161 172 L 1 171 Z";  //Pfad eingeben
+      var rect = drawPath(parentGfx, d, 0, attrs);
+    
+
+      renderEmbeddedLabel(parentGfx, element, 'center-middle');
+
+      return rect;
+    },
+
+
+
+    'postit:Group': function(parentGfx, element) {
+
+      var group = drawRect(parentGfx, element.width, element.height, TASK_BORDER_RADIUS, {
+        stroke: 'black',
+        strokeWidth: 1,
+        strokeDasharray: '8,3,1,3',
+        fill: 'none',
+        pointerEvents: 'none'
+      });
+
+      return group;
+    },
+
+    'postit:CirclePostit': function(parentGfx, element) {
+      var attrs = {
+        fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+        stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getStrokeColor)(element, defaultStrokeColor)
+      };
+
+      if (!('fillOpacity' in attrs)) {
+        attrs.fillOpacity = DEFAULT_FILL_OPACITY;
+      }
+
+      var rect = drawCircle(parentGfx, element.width, element.height, attrs);
+
+      renderEmbeddedLabel(parentGfx, element, 'center-middle');
+
+      return rect;
+    },
+    'postit:TextBox': function(parentGfx, element) {
+      var attrs = {
+        fill: 'none',
+        stroke: 'none'
+      };
+
+      var textSize = element.textSize || DEFAULT_TEXT_SIZE;
+
+      var rect = drawRect(parentGfx, element.width, element.height, 0, attrs);
+
+      renderEmbeddedLabel(parentGfx, element, 'center-middle', textSize);
+
+      return rect;
+    },
+    'postit:Image': function(parentGfx, element) {
+      var imageSource = getImageSource(element);
+
+      var gfx;
+      if (!imageSource) {
+
+        // default placeholder
+        gfx = drawRect(parentGfx, element.width, element.height, 0, {
+          fill: '#ccc',
+          stroke: '#ccc'
+        });
+
+        renderLabel(parentGfx, 'Image Placeholder', {
+          box: element,
+          align: 'center-middle',
+          padding: 5,
+          style: {
+            fill: 'black',
+            fontSize: DEFAULT_TEXT_SIZE
+          },
+        });
+
+      } else {
+        gfx = (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.create)('image', {
+          x: 0,
+          y: 0,
+          width: element.width,
+          height: element.height,
+          href: getImageSource(element)
+        });
+
+        (0,tiny_svg__WEBPACK_IMPORTED_MODULE_3__.append)(parentGfx, gfx);
+      }
+
+      return gfx;
+    },
+
+    'label': function(parentGfx, element) {
+      return renderExternalLabel(parentGfx, element);
+    }
+  };
+
+
+
+
+}
+
+
+inherits__WEBPACK_IMPORTED_MODULE_0___default()(PostitRenderer, diagram_js_lib_draw_BaseRenderer__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+PostitRenderer.$inject = [
+  'config.postit',
+  'eventBus',
+  'styles',
+  'pathMap',
+  'canvas',
+  'textRenderer'
+];
+
+
+PostitRenderer.prototype.canRender = function(element) {
+  return (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_6__.is)(element, 'postit:BoardElement');
+};
+
+PostitRenderer.prototype.drawShape = function(parentGfx, element) {
+  var type = element.type;
+  var h = this.handlers[type];
+
+  /* jshint -W040 */
+  return h(parentGfx, element);
+};
+
+PostitRenderer.prototype.getShapePath = function(element) {
+
+  return (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getRectPath)(element);
+};
+
+// helpers //////////
+
+function getColor(element) {
+  var bo = (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_6__.getBusinessObject)(element);
+
+  return bo.color || element.color;
+}
+
+function getImageSource(element) {
+  var bo = (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_6__.getBusinessObject)(element);
+
+  return bo.source || element.source;
+}
+
+
 
 /***/ }),
 
@@ -13567,7 +14066,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _PostitRenderer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PostitRenderer */ "../lib/draw/PostitRenderer.js");
-/* harmony import */ var _PostitRenderer__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_PostitRenderer__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _TextRenderer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TextRenderer */ "../lib/draw/TextRenderer.js");
 /* harmony import */ var _PathMap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PathMap */ "../lib/draw/PathMap.js");
 
@@ -13577,7 +14075,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   __init__: [ 'postitRenderer' ],
-  postitRenderer: [ 'type', (_PostitRenderer__WEBPACK_IMPORTED_MODULE_0___default()) ],
+  postitRenderer: [ 'type', _PostitRenderer__WEBPACK_IMPORTED_MODULE_0__["default"] ],
   textRenderer: [ 'type', _TextRenderer__WEBPACK_IMPORTED_MODULE_1__["default"] ],
   pathMap: [ 'type', _PathMap__WEBPACK_IMPORTED_MODULE_2__["default"] ]
 });
@@ -13977,9 +14475,9 @@ ContextPadProvider.prototype.getContextPadEntries = function(element) {
   }
 
 // Eigene Spezifikation für Squares
-  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:SquarePostit')) {
-    createColoringEntries2(actions);
-  }
+//  if (is(element, 'postit:SquarePostit')) {
+//    createColoringEntries2(actions);
+//  }
 
 
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:Postit')) {
@@ -19375,7 +19873,7 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
 
     'create.square-postit': createAction(
       'postit:SquarePostit', 'postits', 'pjs-postit-square2',
-      translate('Create Square Postit') 
+      translate('Create Square Postit'), { color: _util_ColorUtil__WEBPACK_IMPORTED_MODULE_1__["default"].GREEN }
     ),
 
 
@@ -21251,12 +21749,11 @@ __webpack_require__.r(__webpack_exports__);
   GREEN: '#7EC845',
   PINK: '#F46F60',
   ICE_BLUE: '#B8D6F7',
-  BLUE: '#23BFE7',
   ORANGE: '#FF9D48',
   YELLOW: '#F5D128',
   BLACK: 'black',
   GREY: 'grey',
-  WHITE: 'white'
+  WHITE: 'white', 
 });
 
 /***/ }),
@@ -58380,7 +58877,7 @@ module.exports = JSON.parse('{"name":"dc","uri":"http://www.omg.org/spec/DD/2010
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"Postit","uri":"http://some-company/schema/postit","prefix":"postit","xml":{"tagAlias":"lowerCase"},"types":[{"name":"BoardElement","isAbstract":true,"properties":[{"name":"name","isAttr":true,"type":"String"},{"name":"id","isAttr":true,"type":"String","isId":true}]},{"name":"PostitBoard","superClass":["RootElement"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"Postit","superClass":["BoardElement"],"properties":[{"name":"color","isAttr":true,"type":"String"}]},{"name":"SquarePostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"PathPostit","superClass":["Postit"]},{"name":"CirclePostit","superClass":["Postit"]},{"name":"ContentPostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"TextBox","superClass":["BoardElement"]},{"name":"Group","superClass":["BoardElement"]},{"name":"Image","superClass":["BoardElement"],"properties":[{"name":"source","isAttr":true,"type":"String"}]},{"name":"RootElement","isAbstract":true,"superClass":["BoardElement"]},{"name":"Definitions","superClass":["BoardElement"],"properties":[{"name":"targetNamespace","isAttr":true,"type":"String"},{"name":"expressionLanguage","default":"http://www.w3.org/1999/XPath","isAttr":true,"type":"String"},{"name":"typeLanguage","default":"http://www.w3.org/2001/XMLSchema","isAttr":true,"type":"String"},{"name":"rootElements","type":"RootElement","isMany":true},{"name":"rootBoards","isMany":true,"type":"postitDi:PostitRootBoard"},{"name":"exporter","isAttr":true,"type":"String"},{"name":"exporterVersion","isAttr":true,"type":"String"}]}]}');
+module.exports = JSON.parse('{"name":"Postit","uri":"http://some-company/schema/postit","prefix":"postit","xml":{"tagAlias":"lowerCase"},"types":[{"name":"BoardElement","isAbstract":true,"properties":[{"name":"name","isAttr":true,"type":"String"},{"name":"id","isAttr":true,"type":"String","isId":true}]},{"name":"PostitBoard","superClass":["RootElement"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"Postit","superClass":["BoardElement"],"properties":[{"name":"color","isAttr":true,"type":"String"}]},{"name":"SquarePostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"PathPostit","superClass":["Postit"]},{"name":"CirclePostit","superClass":["Postit"]},{"name":"StagesPostit","superClass":["Postit"]},{"name":"ContentPostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"TextBox","superClass":["BoardElement"]},{"name":"Group","superClass":["BoardElement"]},{"name":"Image","superClass":["BoardElement"],"properties":[{"name":"source","isAttr":true,"type":"String"}]},{"name":"RootElement","isAbstract":true,"superClass":["BoardElement"]},{"name":"Definitions","superClass":["BoardElement"],"properties":[{"name":"targetNamespace","isAttr":true,"type":"String"},{"name":"expressionLanguage","default":"http://www.w3.org/1999/XPath","isAttr":true,"type":"String"},{"name":"typeLanguage","default":"http://www.w3.org/2001/XMLSchema","isAttr":true,"type":"String"},{"name":"rootElements","type":"RootElement","isMany":true},{"name":"rootBoards","isMany":true,"type":"postitDi:PostitRootBoard"},{"name":"exporter","isAttr":true,"type":"String"},{"name":"exporterVersion","isAttr":true,"type":"String"}]}]}');
 
 /***/ }),
 

@@ -81,6 +81,13 @@
     },
 
     {
+      "name": "StagesPostit",
+      "superClass": ["Postit"]
+    },
+
+
+
+    {
       "name": "ContentPostit",
       "superClass": ["Postit"],
       "properties": [
