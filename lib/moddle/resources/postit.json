@@ -72,7 +72,7 @@
 
     {
       "name": "PathPostit",
-      "superClass": ["Postit"]
+      "superClass": ["BoardElement"]
     },
 
     {

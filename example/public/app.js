@@ -13615,7 +13615,7 @@ function PostitRenderer(
         attrs.fillOpacity = DEFAULT_FILL_OPACITY;
       }
 
-      const d = "M 71 0 A 1 1 0 0 0 54 110 A 1 1 0 0 0 71 0 Z M 84 20 A 1 1 0 0 0 87 45 A 1 1 0 0 0 84 20 Z M 52 42 A 1 1 0 0 0 38 22 A 1 1 0 0 0 52 42 Z M 30 59 A 1 1 0 0 0 97 60 L 43 59 Z";  //Pfad eingeben
+      const d = "M 4 13 A 1 1 0 0 0 42 32 A 1 1 0 0 0 4 13 Z M 27 15 A 1 1 0 0 0 37 15 A 1 1 0 0 0 27 15 Z M 19 18 A 1 1 0 0 0 11 12 A 1 1 0 0 0 19 18 Z M 12 27 A 1 1 0 0 0 34 27 Z";  //Pfad eingeben
       var rect = drawPath(parentGfx, d, 0, attrs);
     
 
@@ -16470,9 +16470,9 @@ ElementFactory.prototype.createPostitElement = function(elementType, attrs) {
 
 ElementFactory.prototype._getDefaultSize = function(semantic) {
    
-  //if (is(semantic, 'postit:PathPostit')) {
-  //  return { d : "M 1 1 L 37 1 L 160 1 L 226 89 L 161 172 L 1 171 Z" };
-  //}
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:PathPostit')) {
+    return { width: 35, height: 35 };
+  }
 
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:ContentPostit')) {
     return { width: 200, height: 1050 };
@@ -19895,13 +19895,7 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     },
 
 
-//Erstellen der neuen SVG Shape --> Path; to-do: Anpassen des 1. Parameter (Type): Path: M 2 3 L 10 3 L 13 6 L 10 9 L 2 9 L 2 3
-// CSS des kleinen Icons kann hier geändert werden: PostitJS.CSS -->  .pjs-postit-process
 
-    'create.path-postit': createAction(
-    'postit:PathPostit', 'postits', 'pjs-postit-process',
-    translate('Emotion positiv'), 
-    ),
 
     // Content Bereich, in diesen können Sticker gezogen werden 
 
@@ -19918,15 +19912,15 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     
     
     
-    'create.image': {
-      group: 'artifact',
-      className: 'pjs-bild',
-      title: translate('Bild einfügen'),
-      action: {
-        click: createImage,
-        dragstart: createImage
-      }
-    },
+    //'create.image': {
+    //  group: 'artifact',
+    //  className: 'pjs-bild',
+    //  title: translate('Bild einfügen'),
+    //  action: {
+    //    click: createImage,
+    //    dragstart: createImage
+    //  }
+    //},
 
 
     'create.text-box': createAction(
@@ -19936,6 +19930,20 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     'create.group': createAction(
       'postit:Group', 'artifact', 'pjs-group',
       translate('Create Group')
+    ),
+
+    'postit-separator': {
+      group: 'postits',
+      separator: true
+    },
+
+    //Erstellen der neuen SVG Shape --> Path; to-do: Anpassen des 1. Parameter (Type): Path: M 2 3 L 10 3 L 13 6 L 10 9 L 2 9 L 2 3
+    // Darstellung von Emotionen
+    // CSS des kleinen Icons kann hier geändert werden: PostitJS.CSS -->  .pjs-postit-process
+
+    'create.path-postit': createAction(
+    'postit:PathPostit', 'postits', 'pjs-postit-process',
+    translate('Kundenemotion positiv'), 
     )
 
 
@@ -20682,7 +20690,7 @@ function canDrop(element, target) {
   }
 
   // Neue Customer Journey Stage hinzufügen auf das Board
-  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:PathPostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:PostitBoard')) {
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:PathPostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:SquarePostit')) {
     return true;
   }
 
@@ -58887,7 +58895,7 @@ module.exports = JSON.parse('{"name":"dc","uri":"http://www.omg.org/spec/DD/2010
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"Postit","uri":"http://some-company/schema/postit","prefix":"postit","xml":{"tagAlias":"lowerCase"},"types":[{"name":"BoardElement","isAbstract":true,"properties":[{"name":"name","isAttr":true,"type":"String"},{"name":"id","isAttr":true,"type":"String","isId":true}]},{"name":"PostitBoard","superClass":["RootElement"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"Postit","superClass":["BoardElement"],"properties":[{"name":"color","isAttr":true,"type":"String"}]},{"name":"SquarePostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"PathPostit","superClass":["Postit"]},{"name":"CirclePostit","superClass":["Postit"]},{"name":"StagesPostit","superClass":["BoardElement"]},{"name":"ContentPostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"TextBox","superClass":["BoardElement"]},{"name":"Group","superClass":["BoardElement"]},{"name":"Image","superClass":["BoardElement"],"properties":[{"name":"source","isAttr":true,"type":"String"}]},{"name":"RootElement","isAbstract":true,"superClass":["BoardElement"]},{"name":"Definitions","superClass":["BoardElement"],"properties":[{"name":"targetNamespace","isAttr":true,"type":"String"},{"name":"expressionLanguage","default":"http://www.w3.org/1999/XPath","isAttr":true,"type":"String"},{"name":"typeLanguage","default":"http://www.w3.org/2001/XMLSchema","isAttr":true,"type":"String"},{"name":"rootElements","type":"RootElement","isMany":true},{"name":"rootBoards","isMany":true,"type":"postitDi:PostitRootBoard"},{"name":"exporter","isAttr":true,"type":"String"},{"name":"exporterVersion","isAttr":true,"type":"String"}]}]}');
+module.exports = JSON.parse('{"name":"Postit","uri":"http://some-company/schema/postit","prefix":"postit","xml":{"tagAlias":"lowerCase"},"types":[{"name":"BoardElement","isAbstract":true,"properties":[{"name":"name","isAttr":true,"type":"String"},{"name":"id","isAttr":true,"type":"String","isId":true}]},{"name":"PostitBoard","superClass":["RootElement"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"Postit","superClass":["BoardElement"],"properties":[{"name":"color","isAttr":true,"type":"String"}]},{"name":"SquarePostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"PathPostit","superClass":["BoardElement"]},{"name":"CirclePostit","superClass":["Postit"]},{"name":"StagesPostit","superClass":["BoardElement"]},{"name":"ContentPostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"TextBox","superClass":["BoardElement"]},{"name":"Group","superClass":["BoardElement"]},{"name":"Image","superClass":["BoardElement"],"properties":[{"name":"source","isAttr":true,"type":"String"}]},{"name":"RootElement","isAbstract":true,"superClass":["BoardElement"]},{"name":"Definitions","superClass":["BoardElement"],"properties":[{"name":"targetNamespace","isAttr":true,"type":"String"},{"name":"expressionLanguage","default":"http://www.w3.org/1999/XPath","isAttr":true,"type":"String"},{"name":"typeLanguage","default":"http://www.w3.org/2001/XMLSchema","isAttr":true,"type":"String"},{"name":"rootElements","type":"RootElement","isMany":true},{"name":"rootBoards","isMany":true,"type":"postitDi:PostitRootBoard"},{"name":"exporter","isAttr":true,"type":"String"},{"name":"exporterVersion","isAttr":true,"type":"String"}]}]}');
 
 /***/ }),
 
