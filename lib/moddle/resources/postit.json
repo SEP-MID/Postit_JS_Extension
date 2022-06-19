@@ -71,14 +71,31 @@
     },
 
     {
-      "name": "PathPostit",
+      "name": "HappyEmotionPostit",
       "superClass": ["BoardElement"]
     },
+
+    {
+      "name": "SadEmotionPostit",
+      "superClass": ["BoardElement"]
+    },
+
+    {
+      "name": "NeutralEmotionPostit",
+      "superClass": ["BoardElement"]
+    },
+
+    {
+      "name": "TruthPostit",
+      "superClass": ["BoardElement"]
+    },
+
 
     {
       "name": "CirclePostit",
       "superClass": ["Postit"]
     },
+
 
     {
       "name": "StagesPostit",

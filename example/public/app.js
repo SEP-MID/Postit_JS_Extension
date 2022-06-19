@@ -13530,30 +13530,30 @@ function PostitRenderer(
         attrs.fillOpacity = DEFAULT_FILL_OPACITY;
       }
 
-      var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
+      var rect = drawRect(parentGfx, element.width, element.height, attrs, {
         stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
         strokeWidth: 2,
         fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
         pointerEvents: 'none'
       });
 
-      if ((0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor) == 'grey') {
-        var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
-          stroke: 'red',
-          strokeWidth: 4,
-          fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
-          pointerEvents: 'none'
-        });
-      }
+      //if (getFillColor(element, defaultFillColor) == 'grey') {
+      //  var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
+      //    stroke: 'red',
+      //    strokeWidth: 4,
+      //    fill: getFillColor(element, defaultFillColor),
+      //    pointerEvents: 'none'
+      //  });
+      //}
 
-      if ((0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor) == 'white') {
-        var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
-          stroke: 'red',
-          strokeWidth: 4,
-          fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
-          pointerEvents: 'none'
-        });
-      }
+      //if (getFillColor(element, defaultFillColor) == 'white') {
+      //  var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
+      //    stroke: 'red',
+      //    strokeWidth: 4,
+      //    fill: getFillColor(element, defaultFillColor),
+      //    pointerEvents: 'none'
+      //  });
+      //}
 
       renderEmbeddedLabel(parentGfx, element, 'center-middle');
 
@@ -13603,8 +13603,8 @@ function PostitRenderer(
 
 
 
-    // Handler für Process-Shape, Bezug auf die Funktion: drawPath, Versuch das ganze über einen path darzustellen 
-    'postit:PathPostit': function(parentGfx, element) {
+    // Handler für Process-Shape, hier erzeugen wir einen positiven Emoji
+    'postit:HappyEmotionPostit': function(parentGfx, element) {
 
       var attrs = {
         fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
@@ -13615,7 +13615,7 @@ function PostitRenderer(
         attrs.fillOpacity = DEFAULT_FILL_OPACITY;
       }
 
-      const d = "M 4 13 A 1 1 0 0 0 42 32 A 1 1 0 0 0 4 13 Z M 27 15 A 1 1 0 0 0 37 15 A 1 1 0 0 0 27 15 Z M 19 18 A 1 1 0 0 0 11 12 A 1 1 0 0 0 19 18 Z M 12 27 A 1 1 0 0 0 34 27 Z";  //Pfad eingeben
+      const d = "M 0 12 A 1 1 0 0 0 31 20 A 1 1 0 0 0 0 12 Z M 19 10 A 1 1 0 0 0 26 10 A 1 1 0 0 0 19 10 Z M 12 11 A 1 1 0 0 0 5 9 A 1 1 0 0 0 12 11 Z M 7 19 A 1 1 0 0 0 24 19 Z";  //Pfad eingeben
       var rect = drawPath(parentGfx, d, 0, attrs);
     
 
@@ -13623,6 +13623,76 @@ function PostitRenderer(
 
       return rect;
     },
+
+
+    // Handler für Process-Shape, hier erzeugen wir einen neutralen Emoji
+    'postit:NeutralEmotionPostit': function(parentGfx, element) {
+
+    var attrs = {
+    fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+    stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getStrokeColor)(element, defaultStrokeColor)
+    };
+
+    if (!('fillOpacity' in attrs)) {
+    attrs.fillOpacity = DEFAULT_FILL_OPACITY;
+    }
+
+    const d = "M 0 12 A 1 1 0 0 0 31 20 A 1 1 0 0 0 0 12 Z M 19 10 A 1 1 0 0 0 26 10 A 1 1 0 0 0 19 10 Z M 12 11 A 1 1 0 0 0 5 9 A 1 1 0 0 0 12 11 Z M 7 22 Z L 24 22 Z";  //Pfad eingeben
+    var rect = drawPath(parentGfx, d, 0, attrs);
+
+
+    renderEmbeddedLabel(parentGfx, element, 'center-middle');
+
+    return rect;
+    },
+
+    // Handler für Process-Shape, hier erzeugen wir einen traurigen Emoji
+    'postit:SadEmotionPostit': function(parentGfx, element) {
+
+      var attrs = {
+      fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+      stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getStrokeColor)(element, defaultStrokeColor)
+      };
+  
+      if (!('fillOpacity' in attrs)) {
+      attrs.fillOpacity = DEFAULT_FILL_OPACITY;
+      }
+  
+      const d = "M 0 12 A 1 1 0 0 0 31 20 A 1 1 0 0 0 0 12 Z M 19 10 A 1 1 0 0 0 26 10 A 1 1 0 0 0 19 10 Z M 12 11 A 1 1 0 0 0 5 9 A 1 1 0 0 0 12 11 Z M 23 25 A 1 1 0 0 0 8 25 Z";  //Pfad eingeben
+      var rect = drawPath(parentGfx, d, 0, attrs);
+  
+  
+      renderEmbeddedLabel(parentGfx, element, 'center-middle');
+  
+      return rect;
+      },
+
+
+    'postit:TruthPostit': function(parentGfx, element) {
+
+      var attrs = {
+      fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
+      stroke: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getStrokeColor)(element, defaultStrokeColor)
+      };
+    
+      if (!('fillOpacity' in attrs)) {
+      attrs.fillOpacity = DEFAULT_FILL_OPACITY;
+      }
+    
+      const d = "M 0 12 Z M 19 10 A 1 1 0 0 0 7 10 L 13 40 Z Z M 17 45 Z L 17 45 A 1 1 0 0 0 9 51 A 1 1 0 0 0 17 45 Z";  //Pfad eingeben
+      var rect = drawPath(parentGfx, d, 0, attrs);
+    
+    
+      renderEmbeddedLabel(parentGfx, element, 'center-middle');
+    
+      return rect;
+      },
+
+
+
+
+
+
 
 
 
@@ -16470,8 +16540,20 @@ ElementFactory.prototype.createPostitElement = function(elementType, attrs) {
 
 ElementFactory.prototype._getDefaultSize = function(semantic) {
    
-  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:PathPostit')) {
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:HappyEmotionPostit')) {
     return { width: 35, height: 35 };
+  }
+
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:NeutralEmotionPostit')) {
+    return { width: 35, height: 35 };
+  }
+
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:SadEmotionPostit')) {
+    return { width: 35, height: 35 };
+  }
+
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:TruthPostit')) {
+    return { width: 25, height: 50 };
   }
 
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:ContentPostit')) {
@@ -19941,10 +20023,25 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     // Darstellung von Emotionen
     // CSS des kleinen Icons kann hier geändert werden: PostitJS.CSS -->  .pjs-postit-process
 
-    'create.path-postit': createAction(
-    'postit:PathPostit', 'postits', 'pjs-postit-process',
+    'create.happy-postit': createAction(
+    'postit:HappyEmotionPostit', 'postits', 'pjs-postit-process',
     translate('Kundenemotion positiv'), 
-    )
+    ),
+
+    'create.neutral-postit': createAction(
+      'postit:NeutralEmotionPostit', 'postits', 'pjs-postit-process',
+      translate('Kundenemotion neutral'), 
+    ),
+
+      'create.sad-postit': createAction(
+        'postit:SadEmotionPostit', 'postits', 'pjs-postit-process',
+        translate('Kundenemotion negativ'), 
+      ),
+
+      'create.truth-postit': createAction(
+        'postit:TruthPostit', 'postits', 'pjs-postit-process',
+        translate('Moment of Truth einfügen'), 
+      )
 
 
 
@@ -20689,8 +20786,23 @@ function canDrop(element, target) {
     return true;
   }
 
-  // Neue Customer Journey Stage hinzufügen auf das Board
-  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:PathPostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:SquarePostit')) {
+  // Neue positive Emotion 
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:HappyEmotionPostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:SquarePostit')) {
+    return true;
+  }
+
+  // Neue neutrale Emotion
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:NeutralEmotionPostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:SquarePostit')) {
+    return true;
+  }
+
+  // Neue negative Emotion
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:SadEmotionPostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:SquarePostit')) {
+    return true;
+  }
+
+  // Neuen Moment of truth
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:TruthPostit') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:SquarePostit')) {
     return true;
   }
 
@@ -58895,7 +59007,7 @@ module.exports = JSON.parse('{"name":"dc","uri":"http://www.omg.org/spec/DD/2010
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"Postit","uri":"http://some-company/schema/postit","prefix":"postit","xml":{"tagAlias":"lowerCase"},"types":[{"name":"BoardElement","isAbstract":true,"properties":[{"name":"name","isAttr":true,"type":"String"},{"name":"id","isAttr":true,"type":"String","isId":true}]},{"name":"PostitBoard","superClass":["RootElement"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"Postit","superClass":["BoardElement"],"properties":[{"name":"color","isAttr":true,"type":"String"}]},{"name":"SquarePostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"PathPostit","superClass":["BoardElement"]},{"name":"CirclePostit","superClass":["Postit"]},{"name":"StagesPostit","superClass":["BoardElement"]},{"name":"ContentPostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"TextBox","superClass":["BoardElement"]},{"name":"Group","superClass":["BoardElement"]},{"name":"Image","superClass":["BoardElement"],"properties":[{"name":"source","isAttr":true,"type":"String"}]},{"name":"RootElement","isAbstract":true,"superClass":["BoardElement"]},{"name":"Definitions","superClass":["BoardElement"],"properties":[{"name":"targetNamespace","isAttr":true,"type":"String"},{"name":"expressionLanguage","default":"http://www.w3.org/1999/XPath","isAttr":true,"type":"String"},{"name":"typeLanguage","default":"http://www.w3.org/2001/XMLSchema","isAttr":true,"type":"String"},{"name":"rootElements","type":"RootElement","isMany":true},{"name":"rootBoards","isMany":true,"type":"postitDi:PostitRootBoard"},{"name":"exporter","isAttr":true,"type":"String"},{"name":"exporterVersion","isAttr":true,"type":"String"}]}]}');
+module.exports = JSON.parse('{"name":"Postit","uri":"http://some-company/schema/postit","prefix":"postit","xml":{"tagAlias":"lowerCase"},"types":[{"name":"BoardElement","isAbstract":true,"properties":[{"name":"name","isAttr":true,"type":"String"},{"name":"id","isAttr":true,"type":"String","isId":true}]},{"name":"PostitBoard","superClass":["RootElement"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"Postit","superClass":["BoardElement"],"properties":[{"name":"color","isAttr":true,"type":"String"}]},{"name":"SquarePostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"HappyEmotionPostit","superClass":["BoardElement"]},{"name":"SadEmotionPostit","superClass":["BoardElement"]},{"name":"NeutralEmotionPostit","superClass":["BoardElement"]},{"name":"TruthPostit","superClass":["BoardElement"]},{"name":"CirclePostit","superClass":["Postit"]},{"name":"StagesPostit","superClass":["BoardElement"]},{"name":"ContentPostit","superClass":["Postit"],"properties":[{"name":"boardElements","isMany":true,"type":"BoardElement"}]},{"name":"TextBox","superClass":["BoardElement"]},{"name":"Group","superClass":["BoardElement"]},{"name":"Image","superClass":["BoardElement"],"properties":[{"name":"source","isAttr":true,"type":"String"}]},{"name":"RootElement","isAbstract":true,"superClass":["BoardElement"]},{"name":"Definitions","superClass":["BoardElement"],"properties":[{"name":"targetNamespace","isAttr":true,"type":"String"},{"name":"expressionLanguage","default":"http://www.w3.org/1999/XPath","isAttr":true,"type":"String"},{"name":"typeLanguage","default":"http://www.w3.org/2001/XMLSchema","isAttr":true,"type":"String"},{"name":"rootElements","type":"RootElement","isMany":true},{"name":"rootBoards","isMany":true,"type":"postitDi:PostitRootBoard"},{"name":"exporter","isAttr":true,"type":"String"},{"name":"exporterVersion","isAttr":true,"type":"String"}]}]}');
 
 /***/ }),
 
