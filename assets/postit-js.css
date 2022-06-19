@@ -217,7 +217,7 @@ button:hover, a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 8px 8px 4px 8px;
-  width: 32px !important;
+  width: 30px !important;
   height: 32px !important;
 }
 
@@ -231,6 +231,7 @@ button:hover, a:hover {
   width: 15px !important;
   height: 40px !important;
 }
+
 
 
 .pjs-bild {
