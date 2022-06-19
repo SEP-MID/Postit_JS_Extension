@@ -16549,15 +16549,15 @@ ElementFactory.prototype.createPostitElement = function(elementType, attrs) {
 ElementFactory.prototype._getDefaultSize = function(semantic) {
    
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:HappyEmotionPostit')) {
-    return { width: 35, height: 35 };
+    return { width: 32, height: 32 };
   }
 
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:NeutralEmotionPostit')) {
-    return { width: 35, height: 35 };
+    return { width: 32, height: 32 };
   }
 
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:SadEmotionPostit')) {
-    return { width: 35, height: 35 };
+    return { width: 32, height: 32 };
   }
 
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_4__.is)(semantic, 'postit:TruthPostit')) {
