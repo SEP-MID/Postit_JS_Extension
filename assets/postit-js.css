@@ -209,8 +209,19 @@ button:hover, a:hover {
 
 
 
-.pjs-image2 {
+.pjs-image {
   background-image: url("./icons/image2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8px 8px 4px 8px;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+
+
+.pjs-truth {
+  background-image: url("./icons/momentoftruth.svg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 8px 8px 4px 8px;
