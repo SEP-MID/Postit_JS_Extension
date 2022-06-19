@@ -222,6 +222,35 @@ button:hover, a:hover {
 }
 
 
+.pjs-happyEmoji {
+  background-image: url("./icons/happyEmoji.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8px;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+
+.pjs-neutralEmoji {
+  background-image: url("./icons/neutralEmoji.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8px;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+
+.pjs-sadEmoji {
+  background-image: url("./icons/sadEmoji.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8px;
+  width: 32px !important;
+  height: 32px !important;
+}
+
 
 .pjs-truth {
   background-image: url("./icons/svg-path.png");
