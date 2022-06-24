@@ -155,7 +155,7 @@ button:hover, a:hover {
 /* canvas drawing */
 
 
-/* rect not needed at the moment*/
+/* Not used, but relevant in order to display Notiz-Css*/
 
 .pjs-postit-rect {
   margin: 8px;
@@ -164,31 +164,7 @@ button:hover, a:hover {
   background-color: #dc0a0a;
 }
 
-
-
-/* TO Do: neue Form Suchen */
-
-.pjs-postit-process {
-  margin: 8px;
-  border-radius: 90px;
-  width: 32px !important;
-  height: 32px !important;
-  background-color: #f46f60;
-}
-
-
-/* Form in der Palette für Kreise */
-
-.pjs-postit-circle {
-  margin: 8px;
-  border-radius: 90px;
-  width: 32px !important;
-  height: 32px !important;
-  background-color: #f46f60;
-}
-
-
-/* Form in der Palette für 4-Ecke */
+/* Notiz-Css */
 
 .pjs-postit-square2 {
   margin: 8px;
@@ -200,6 +176,8 @@ button:hover, a:hover {
   border-width: 2px;
 }
 
+/* Neuer Content Bereich-Css */
+
 .pjs-postit-square3 {
   margin: 8px;
   width: 27px !important;
@@ -209,9 +187,6 @@ button:hover, a:hover {
   border-style: solid;
   border-width: 2px;
 }
-
-
-
 
 
 
@@ -291,6 +266,15 @@ button:hover, a:hover {
   height: 32px !important;
 }
 
+.pjs-trash {
+  background-image: url("./icons/trash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+
 
 .pjs-bild {
   background-image: url("./icons/image2.svg");
@@ -300,14 +284,6 @@ button:hover, a:hover {
   width: 32px !important;
   height: 32px !important;
 }
-
-
-
-
-
-
-
-
 
 
 .pjs-image:hover {
@@ -339,15 +315,23 @@ button:hover, a:hover {
 
 .pjs-color-entry-GREEN {
   background-color: #7EC845 !important;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .pjs-color-entry-WHITE {
-  background-color: #c32828 !important;
-  border-color: #dc0a0a;
+  background-color: #ffffff !important;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .pjs-color-entry-PINK {
   background-color: #F46F60 !important;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .pjs-color-entry-ICE_BLUE {
@@ -370,11 +354,6 @@ button:hover, a:hover {
   background-color: black !important;
 }
 
-.pjs-color-entry-WHITE {
-  background-color: white !important;
-  border-color:rgb(255, 116, 0);
-  border-width: 2;
-}
 
 .pjs-horizontal {
   display: inline-block;
