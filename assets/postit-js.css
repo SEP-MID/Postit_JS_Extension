@@ -192,9 +192,12 @@ button:hover, a:hover {
 
 .pjs-postit-square2 {
   margin: 8px;
-  width: 32px !important;
-  height: 32px !important;
+  width: 27px !important;
+  height: 27px !important;
   background-color: #06a106;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .pjs-postit-square3 {
@@ -226,7 +229,7 @@ button:hover, a:hover {
   background-image: url("./icons/happyEmoji.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 8px;
+  margin: 7px;
   width: 32px !important;
   height: 32px !important;
 }
@@ -246,7 +249,7 @@ button:hover, a:hover {
   background-image: url("./icons/sadEmoji.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 8px;
+  margin: 7px;
   width: 32px !important;
   height: 32px !important;
 }
@@ -256,9 +259,9 @@ button:hover, a:hover {
   background-image: url("./icons/svg-path.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 13px;
+  margin: 11px;
   width: 15px !important;
-  height: 40px !important;
+  height: 38px !important;
 }
 
 
