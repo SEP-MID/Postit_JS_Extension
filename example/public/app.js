@@ -13582,11 +13582,11 @@ function PostitRenderer(
         attrs.fillOpacity = DEFAULT_FILL_OPACITY;
       }
 
-      //var rect = drawRect(parentGfx, element.width, element.height, 0, attrs);
+      var rect = drawRect(parentGfx, element.width, element.height, 0, attrs);
 
 
       if ((0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor) == 'white') {
-        var rect = drawRect(parentGfx, element.width, element.height, attrs, TASK_BORDER_RADIUS, {
+        var rect = drawRect(parentGfx, element.width, element.height, attrs, {
           stroke: 'black',
           strokeWidth: 2,
           fill: (0,_PostitRendererUtil__WEBPACK_IMPORTED_MODULE_4__.getFillColor)(element, defaultFillColor),
@@ -21456,7 +21456,7 @@ function is(element, type) {
  */
 function findDisplayCandidate(definitions) {
   return (0,min_dash__WEBPACK_IMPORTED_MODULE_1__.find)(definitions.rootElements, function(e) {
-    return is(e, 'postit:PostitBoard');
+    return is(e, 'postit:PostitBoard') || is(e, 'postit:ContentPostit') ;
   });
 }
 
@@ -21625,7 +21625,7 @@ function PostitTreeWalker(handler, translate) {
 
     var ctx = visitRoot(rootElement, plane);
 
-    if (is(rootElement, 'postit:PostitBoard')) {
+    if (is(rootElement, 'postit:PostitBoard') || is(rootElement, 'postit:ContentPostit')) {
       handlePostitBoard(rootElement, ctx);
     }
 
@@ -21639,29 +21639,15 @@ function PostitTreeWalker(handler, translate) {
     // Funktion rekursiv bauen, sodass immer die element.BoardElement gelesen werden
   function handleBoardElements(boardElements, context) {
     (0,min_dash__WEBPACK_IMPORTED_MODULE_1__.forEach)(boardElements, function(element) {{
-      visitIfDi(element, context); // element = BoardElement
+      visitIfDi(element, context); 
     }})
   }
   
-  // Unser Versuch
-  //function handleBoardElements(boardElements, context) {
-  //  forEach(boardElements, function(element) {{
-  //      forEach(element.boardElements, function(element) {
-  //      visitIfDi(element.boardElements, context);
-  //      }}
-  //  visitIfDi(element, context);
-  //  }})
-  //}
-
-
-
-
-
-
-
+  
 
   function handlePostitBoard(board, context) {
     handleBoardElements(board.boardElements, context);
+    handleBoardElements(board.boardElements.boardElements, context);
 
     // log board handled
     handled(board);
