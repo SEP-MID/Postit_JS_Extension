@@ -264,6 +264,32 @@ button:hover, a:hover {
   height: 38px !important;
 }
 
+.pjs-handTool {
+  background-image: url("./icons/hand.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 7px;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.pjs-lassoTool {
+  background-image: url("./icons/lasso.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 7px;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.pjs-spaceTool {
+  background-image: url("./icons/space.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 7px;
+  width: 32px !important;
+  height: 32px !important;
+}
 
 
 .pjs-bild {
