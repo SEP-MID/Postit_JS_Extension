@@ -21636,7 +21636,17 @@ function PostitTreeWalker(handler, translate) {
     // Funktion rekursiv bauen, sodass immer die element.BoardElement gelesen werden
   function handleBoardElements(boardElements, context) {
     (0,min_dash__WEBPACK_IMPORTED_MODULE_1__.forEach)(boardElements, function(element) {{
-      visitIfDi(element, context); 
+      visitIfDi(element, context);
+
+        (0,min_dash__WEBPACK_IMPORTED_MODULE_1__.forEach)(element.boardElements, function(element) {{
+        var subcontext = context.children.find((Shape)=>Shape.id === element.id);
+          visitIfDi(element, subcontext); 
+
+          (0,min_dash__WEBPACK_IMPORTED_MODULE_1__.forEach)(element.boardElements, function(element) {{
+            var subsubcontext = context.children.find((Shape)=>Shape.id === element.id);
+              visitIfDi(element, subsubcontext);    
+          }})
+      }}) 
     }})
   }
   
@@ -21644,7 +21654,7 @@ function PostitTreeWalker(handler, translate) {
 
   function handlePostitBoard(board, context) {
     handleBoardElements(board.boardElements, context);
-    handleBoardElements(board.boardElements.boardElements, context);
+    //handleBoardElements(board.boardElements.boardElements, context);
 
     // log board handled
     handled(board);
