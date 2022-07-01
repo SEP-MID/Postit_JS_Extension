@@ -1,3 +1,5 @@
+@import '../node_modules/diagram-js/assets/diagram-js.css';
+
 html, body, #canvas {
   font-family: 'IBM Plex Sans', sans-serif;
   height: 100%;
@@ -53,6 +55,17 @@ html, body, #canvas {
   display: inline-block;
   line-height: 1.2em;
 }
+
+.vollbild {
+  background-image: url(".icons/fullscreeen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8px 8px 4px 8px;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+
 
 .icon-resize-full {
   box-sizing: border-box;
