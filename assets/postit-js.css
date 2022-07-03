@@ -214,7 +214,7 @@ button:hover, a:hover {
   background-image: url("./icons/neutralEmoji.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 8px;
+  margin: 7px;
   width: 32px !important;
   height: 32px !important;
 }
