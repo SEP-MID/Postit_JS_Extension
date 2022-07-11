@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <postit:Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="sample-diagram">
   <postit:PostitBoard id="Board_1">
-   <postit:StagesPostit name="Actions" id="Postit_1" color="" />
-   <postit:StagesPostit name="Goals" id="Postit_2" color="" />
+   <postit:StagesPostit name="Goals" id="Postit_1" color="" />
+   <postit:StagesPostit name="Actions" id="Postit_2" color="" />
    <postit:StagesPostit name="Touchpoints" id="Postit_3" color="" />
    <postit:Group name="" id="Postit_4" color="YELLOW" />
    <postit:Group name="" id="Postit_5" color="YELLOW" />

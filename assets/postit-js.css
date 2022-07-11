@@ -234,7 +234,7 @@ button:hover, a:hover {
   background-image: url("./icons/svg-path.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 11px;
+  margin: 10px;
   width: 15px !important;
   height: 40px !important;
 }
