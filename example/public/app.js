@@ -19929,7 +19929,7 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     'hand-tool': {
       group: 'tools',
       className: 'pjs-handTool',
-      title: translate('Das Hand-Tool aktivieren'),
+      title: translate('Activate the hand-tool'),
       action: {
         click: function(event) {
           handTool.activateHand(event);
@@ -19939,7 +19939,7 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     'lasso-tool': {
       group: 'tools',
       className: 'pjs-lassoTool',
-      title: translate('Das Lasso-Tool aktivieren'),
+      title: translate('Activate the lasso-tool'),
       action: {
         click: function(event) {
           lassoTool.activateSelection(event);
@@ -19949,7 +19949,7 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     'space-tool': {
       group: 'tools',
       className: 'pjs-spaceTool',
-      title: translate('Das Space-Tool aktivieren'),
+      title: translate('Activate the space-tool'),
       action: {
         click: function(event) {
           spaceTool.activateSelection(event);
@@ -19968,15 +19968,12 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
     // Erstellen der Viereck Form 
     'create.square-postit': createAction(
       'postit:SquarePostit', 'postits', 'pjs-postit-square2',
-      translate('Square Postit erstellen'), { color: _util_ColorUtil__WEBPACK_IMPORTED_MODULE_1__["default"].GREEN }
+      translate('Add new element'), { color: _util_ColorUtil__WEBPACK_IMPORTED_MODULE_1__["default"].GREEN }
     ),
 
 
 
-    'postit-separator': {
-      group: 'postits',
-      separator: true
-    },
+
 
 
 
@@ -19985,9 +19982,13 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
 
     'create.content-postit': createAction(
       'postit:ContentPostit', 'postits', 'pjs-postit-square3',
-      translate('Neuen Inhaltsbereich hinzufügen'), 
+      translate('Add new content-element'), 
       ),
 
+   'postit-separator': {
+        group: 'postits',
+        separator: true
+      },
 
    'tool-separator': {
      group: 'tools',
@@ -20009,11 +20010,11 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
 
     'create.text-box': createAction(
       'postit:TextBox', 'artifact', 'pjs-text-box',
-      translate('Create Text')
+      translate('Add text')
     ),
     'create.group': createAction(
       'postit:Group', 'artifact', 'pjs-group',
-      translate('Gruppierung erstellen')
+      translate('Group')
     ),
 
     'postit-separator': {
@@ -20027,24 +20028,23 @@ PaletteProvider.prototype.getPaletteEntries = function(element) {
 
     'create.happy-postit': createAction(
     'postit:HappyEmotionPostit', 'postits', 'pjs-happyEmoji',
-    translate('Kundenemotion positiv'), 
+    translate('Add positive customer emotion'), 
     ),
 
     'create.neutral-postit': createAction(
       'postit:NeutralEmotionPostit', 'postits', 'pjs-neutralEmoji',
-      translate('Kundenemotion neutral'), 
+      translate('Add neutral customer emotion'), 
     ),
 
-      'create.sad-postit': createAction(
+    'create.sad-postit': createAction(
         'postit:SadEmotionPostit', 'postits', 'pjs-sadEmoji',
-        translate('Kundenemotion negativ'), 
-      ),
+        translate('Add negative customer emotion'), 
+    ),
 
-      'create.truth-postit': createAction(
+    'create.truth-postit': createAction(
         'postit:TruthPostit', 'postits', 'pjs-truth',
-        translate('Moment of Truth einfügen'), 
-      )
-
+        translate('Add moment of truth'), 
+    )
 
 
   });
@@ -20826,7 +20826,17 @@ function canDrop(element, target) {
   }
 
   // Neue Textbox hinzufügen hinzufügen auf das Board
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:TextBox') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:PostitBoard')) {
+    return true;
+  }
+
+  // Neue Textbox hinzufügen hinzufügen in den Inhaltsbereich
   if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:TextBox') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:ContentPostit')) {
+    return true;
+  }
+
+  // Neue Textbox hinzufügen hinzufügen auf Sticker Element
+  if ((0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(element, 'postit:TextBox') && (0,_util_ModelUtil__WEBPACK_IMPORTED_MODULE_3__.is)(target, 'postit:SquarePostit')) {
     return true;
   }
 
