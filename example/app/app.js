@@ -52,14 +52,14 @@ document.getElementById('js-toggle-fullscreen').addEventListener('click', functi
   }
 });
 
-/*document.getElementById('js-toggle-keyboard-help').addEventListener('click', function() {
+/* document.getElementById('js-toggle-keyboard-help').addEventListener('click', function() {
   state.keyboardHelp = !state.keyboardHelp;
   let displayProp = 'none';
   if (state.keyboardHelp) {
     displayProp = 'block';
   }
   document.getElementById('io-dialog-main').style.display = displayProp;
-}); 
+});
 */
 
 document.getElementById('io-dialog-main').addEventListener('click', function() {
